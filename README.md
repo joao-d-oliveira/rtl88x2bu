@@ -1,6 +1,17 @@
 # Messsage Joao
 Edited the original repository from [here](https://github.com/cilynx/rtl88x2bu) to be able to add monitor mode (otherwise wasn't able)
-
+For that, edited Makefile and before doing the following steps of installation did:
+```sudo make clean
+   sudo make```
+   
+Then just followed instructions:
+```VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
+sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+sudo dkms add -m rtl88x2bu -v ${VER}
+sudo dkms build -m rtl88x2bu -v ${VER}
+sudo dkms install -m rtl88x2bu -v ${VER}
+sudo modprobe 88x2bu```
+  
 # Administrative Note
 
 As of upstream version 5.6.1, I'm moving away from individual repositories for each upstream version in favor of a single repository with version-based branches.  Hopefully, this will help with clutter and URL consistency moving forward.  The archived repositories are available here:
