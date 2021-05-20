@@ -1,3 +1,6 @@
+# Messsage Joao
+Edited the original repository from [here] (https://github.com/cilynx/rtl88x2bu) to be able to add monitor mode (otherwise wasn't able)
+
 # Administrative Note
 
 As of upstream version 5.6.1, I'm moving away from individual repositories for each upstream version in favor of a single repository with version-based branches.  Hopefully, this will help with clutter and URL consistency moving forward.  The archived repositories are available here:
