@@ -1,5 +1,5 @@
 # Messsage Joao
-Edited the original repository from [here] (https://github.com/cilynx/rtl88x2bu) to be able to add monitor mode (otherwise wasn't able)
+Edited the original repository from [here](https://github.com/cilynx/rtl88x2bu) to be able to add monitor mode (otherwise wasn't able)
 
 # Administrative Note
 
