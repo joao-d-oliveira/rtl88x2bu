@@ -15,6 +15,14 @@ sudo dkms build -m rtl88x2bu -v ${VER}
 sudo dkms install -m rtl88x2bu -v ${VER}
 sudo modprobe 88x2bu
 ```
+
+To start Monitor mode (replace wlanUSB with interface name):
+```
+IFACE=wlanUSB
+sudo ip link set $IFACE down
+sudo iw $IFACE set monitor control
+sudo ip link set $IFACE up
+```
   
 # Administrative Note
 
